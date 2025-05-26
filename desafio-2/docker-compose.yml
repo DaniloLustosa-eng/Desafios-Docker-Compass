@@ -1,0 +1,16 @@
+
+
+services:
+  nginx-desafio:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - volume-desafio-2:/usr/share/nginx/html
+volumes:
+  volume-desafio-2:
+    external: true
+      
+      
+
+  
