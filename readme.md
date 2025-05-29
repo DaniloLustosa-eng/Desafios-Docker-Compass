@@ -4,4 +4,5 @@
 [ -3 baixando curl com terminal interativo!🔗](desafio-3/README.md)  
 [ -4 Banco de dados MySQL com Docker!🐬🐳](desafio-4/README.md)  
 [ -5 Usando variáveis de ambiente para dizer o seu nome!⚙️](desafio-5/README.md)  
-[ -6 Imagem com Multi-Stage-Buil!📥⌛](desafio-6/README.md)
+[ -6 Imagem com Multi-Stage-Buil!📥⌛](desafio-6/README.md)  
+[ -11 Usando o Trivy para verificação de vulnerabilidades de uma imagem!🩺](desafio-11/README.md)
