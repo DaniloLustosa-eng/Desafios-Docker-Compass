@@ -1,7 +1,7 @@
  # DESAFIO -7
 ## ✅ Descrição 
-## Crie um projeto no docker compose para executar o projeto ReactExpress + Mongo
-## - 1 criei um arquivo docker-compose com a seguinte configuração:
+## Crie um projeto com Docker Compose para executar o projeto ReactExpress com MongoDB.
+## - 1 Criei um arquivo docker-compose com a seguinte configuração:
 ```docker
 services:
   frontend:
@@ -46,7 +46,7 @@ networks:
 volumes:
   mongo-db:
 ```
-## - 2 usei o comando `docker-compose up -d` e fui em meu navegador e digitei `localhost:8080`
+## - 2 Usei o comando `docker-compose up -d` e abri o navegador e digitei `localhost:8080`
 ![alt text](images/image.png)
-## - 2.1 container funcionou com exito!!!🐳
+## - 2.1 container funcionou com exito!🐳
 ![alt text](images/image-1.png) 
