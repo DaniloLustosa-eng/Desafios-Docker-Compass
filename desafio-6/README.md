@@ -22,7 +22,7 @@ CMD [ "/docker-gs-ping" ]
 ## 1.1 tamanho da imagem sem muitl-stage-build 📉
 ![alt text](images/image.png) 
 
-## - 2 imagem com muitl-stage-build 📈
+## - 2 imagem com muitl-stage-build 
 ```docker
 FROM golang:1.23 AS builder
 
@@ -39,7 +39,7 @@ EXPOSE 8080
 USER nonroot:nonroot
 ENTRYPOINT ["/app"]
 ```
-## 2.2 tamanho da imagem com muitl-stage-build
+## 2.2 tamanho da imagem com muitl-stage-build📈
 ![alt text](images/image2.png) 
 ### 🐳 Explicação do Dockerfile muitl-stage-build 🛟
 
