@@ -1,4 +1,4 @@
- # DESAFIO -7
+ # DESAFIO -8
 ## ✅ Descrição 
 ## Utilize Docker Compose para configurar uma aplicação com um banco dedados PostgreSQL, use para isso o projeto pgadmin.
 ## primeiro foi criado o arquivo `docker-compose.yml` com a seguinte configuração:
