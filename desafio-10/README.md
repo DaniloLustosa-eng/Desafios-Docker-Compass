@@ -19,4 +19,4 @@ while (true) {
 ```
 ## - 3 Usei o comando `docker build -t desafio-10 .` para criar a imagem e o comando `docker run -d  desafio-10  ` para rodar o container.
 ## - 4 Entrei dentro do container usando o comando `docker exec -it <container_id> sh` e verifiquei se o usuario era o correto usando o comando `whoami` e obtive a seguinte resposta:
-![alt text](image.png)
+![alt text](images/image.png) 
