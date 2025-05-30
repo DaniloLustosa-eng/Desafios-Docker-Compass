@@ -1,0 +1,10 @@
+FROM python:3.9-slim
+RUN adduser --system --group --no-create-home --disabled-login appuser
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN chown -R appuser:appuser /app
+USER appuser
+COPY . .
+CMD [ "python", "app.py" ]
+
