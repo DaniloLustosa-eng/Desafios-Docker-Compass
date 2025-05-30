@@ -1,17 +1,8 @@
 FROM node:24-alpine3.20
 WORKDIR /app
-
-RUN apk add --no-cache bash
-
-
-
 RUN adduser -D daniloUser
-
 USER daniloUser
-
-
 COPY . /app
-
 EXPOSE 3000
-CMD ["node", "hello-world.js"]
+CMD ["node", "index.js"]
 
