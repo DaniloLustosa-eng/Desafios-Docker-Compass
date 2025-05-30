@@ -3,7 +3,7 @@
 ## Após identificar vulnerabilidades em imagens Docker com ferramentas como o Trivy, o próximo passo é a correção. Imagens grandes e genéricas frequentemente incluem bibliotecas desnecessárias e vulneráveis, além de usarem o usuário root por padrão.
 ## - 1 Usei o comando `docker run --rm -v //var/run/docker.sock:/var/run/docker.sock aquasec/trivy:latest image python:3.9` para verificar a imagem python:3.9, foram encontradas vulnerabilidades, como mostrado na imagem abaixo:
 ![alt text](images/image.png)
-## - 1.1 Imagem com vulnerabilidades e más práticas
+## - 1.1❌Imagem com vulnerabilidades e más práticas
 ```dockerfile
  FROM python:3.9-slim
  WORKDIR /app
@@ -12,7 +12,7 @@
  COPY . .
  CMD ["python", "app.py"]
 ```
-## - 2 Para corrigir essas vulnerabilidades, criei um Dockerfile que utiliza uma imagem base mais leve, como uma imagem slim, e inclui apenas as bibliotecas necessárias. O Dockerfile é o seguinte:
+## - 2 ✅Para corrigir essas vulnerabilidades, criei um Dockerfile que utiliza uma imagem base mais leve, como uma imagem slim, e inclui apenas as bibliotecas necessárias. O Dockerfile é o seguinte:
 ```dockerfile
 FROM python:3.9-slim
 RUN adduser --system --group --no-create-home --disabled-login appuser
@@ -24,7 +24,7 @@ USER appuser
 COPY . .
 CMD [ "python", "app.py" ]
 ```
-## - 2.1 Explicação do requirement.txt
+## - 2.1📄Explicação do requirement.txt
 ## O arquivo requirements.txt contém as dependências necessárias para o aplicativo Python. Neste caso, inclui Flask, que é um microframework para Python, e outras bibliotecas essenciais.
 ```txt
 flask==3.1.1
@@ -38,6 +38,5 @@ setuptools==78.1.1
 para verificar a imagem desafio-12-slim:latest, e as vunerabilidades foram corrigidas, como mostrado na imagem abaixo:
  ![alt text](images/image-3.png)
  ![alt text](images/image-4.png)
-
 ## a imagem antiga é maior e contém bibliotecas desnecessárias, o que aumenta a superfície de ataque e as vulnerabilidades potenciais:
 ![alt text](images/image-2.png)
