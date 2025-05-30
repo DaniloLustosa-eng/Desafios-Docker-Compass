@@ -24,7 +24,7 @@ RUN apk add --no-cache sqlite-libs=3.48.0-r1
 # ✅ versão corrigida pip 23.3
 ## para corrigir basta adicionar no dockerfile o seguinte comando :
  ```docker
-comando RUN pip install --no-cache-dir pip==23.3
+ RUN pip install --no-cache-dir pip==23.3
  ```
 # ❌versão com erro setuptools 58.1.0
 ## ReDoS (corrigido na 65.5.1):

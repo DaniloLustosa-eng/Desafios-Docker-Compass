@@ -11,5 +11,6 @@
 [ -10 Usando o Dockerfile para criar uma imagem do Node.js!🛠️](desafio-10/README.md)  
 [ -11 Usando o Trivy para verificação de vulnerabilidades de uma imagem!🩺](desafio-11/README.md)  
 [ -12 Corrigindo vulnerabilidades de uma imagem Docker!🔧](desafio-12/README.md)  
+[ -13 Criando uma imagem com Python 3.11-slim e enviando ao Docker Hub!🐋🔗🐱](desafio-13/README.md)  
  
  
